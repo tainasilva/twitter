@@ -3,7 +3,7 @@
 namespace App\Http\Controllers;
 
 use Illuminate\Http\Request;
-use Twitter;
+use App\Twitter;
 
 class TwitterController extends Controller {
 

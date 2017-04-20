@@ -2,7 +2,6 @@
 
 namespace App\Providers;
 
-use Twitter\Twitter;
 use Illuminate\Support\ServiceProvider;
 
 class AppServiceProvider extends ServiceProvider {
@@ -23,8 +22,8 @@ class AppServiceProvider extends ServiceProvider {
      */
     public function register() {
 
-       $this->app->singleton('Twitter', '\app\TwitterAPI');
+        $this->app->singleton('Twitter', '\app\Twitter');
+       
     }
-
 
 }
