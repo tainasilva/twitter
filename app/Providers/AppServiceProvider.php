@@ -22,7 +22,7 @@ class AppServiceProvider extends ServiceProvider {
      */
     public function register() {
 
-        $this->app->singleton('Twitter', '\app\Twitter');
+        $this->app->singleton('Twitter', '\app\TwitterAPI');
        
     }
 
