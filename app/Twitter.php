@@ -1,6 +1,6 @@
 <?php
 
-namespace App\Twitter;
+namespace App;
 
 use Exception;
 use Carbon\Carbon as Carbon;
@@ -356,6 +356,7 @@ class Twitter extends tmhOAuth {
 
     public function getUserTimeline($parameters = []) {
 
+        
         return $this->get('statuses/user_timeline', $parameters);
     }
 
